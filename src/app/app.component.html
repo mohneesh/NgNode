@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<h3><app-product></app-product>
+<!--<h2>
+{{fromNode.countries | json}}
+</h2>-->
+
+<ul>
+  <li *ng-for="let country of fromNode.countries">{{country | json}}</li>
+</ul>
