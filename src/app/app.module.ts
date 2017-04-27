@@ -7,6 +7,11 @@ import { NodeTestService } from './services/node-test.service';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
 
+import { AdminModule } from './modules/admin/admin.module';
+import { BirlasoftModule } from './modules/birlasoft/birlasoft.module';
+import { GeModule } from './modules/ge/ge.module';
+import { GenpactModule } from './modules/genpact/genpact.module';
+
 @NgModule({
   declarations: [
     AppComponent,

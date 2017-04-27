@@ -7,7 +7,8 @@ export class NodeTestService {
 
   constructor(private http:Http) { }
 
-  private url:string = 'http://localhost:3000';
+  //private url:string = 'http://localhost:3000';
+  private url:string = 'http://localhost:3000/api/countries';
 
   getNodeTest() {
     return this.http.get(this.url).map((response: Response) => response.json());

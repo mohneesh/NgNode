@@ -8,14 +8,14 @@ import { NodeTestService } from './services/node-test.service';
 })
 export class AppComponent {
   title = 'Hey! I am Angular';
-  
+
   constructor(private nodeTestService:NodeTestService){}
 
   fromNode = '';
 
   ngOnInit() {
     this.nodeTestService.getNodeTest().subscribe(responseNode => this.fromNode = responseNode);
-    //console.log(this.fromNode);
+    console.log("Json Object received---> "+this.fromNode);
   }
 
 }
