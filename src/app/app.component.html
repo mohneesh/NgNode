@@ -6,6 +6,11 @@
 {{fromNode.countries | json}}
 </h2>-->
 
-<ul>
-  <li *ng-for="let country of fromNode.countries">{{country | json}}</li>
-</ul>
+<!--<ul>
+  <li *ngFor="let country of fromNode.countries">{{country | json}}</li>
+</ul>-->
+
+<table>
+<tr><th center>Name</th><th>Code</th></tr>
+<tr *ngFor="let country of fromNode.countries"><td>{{country.name}}</td><td>{{country.code}}</td></tr>
+</table>
